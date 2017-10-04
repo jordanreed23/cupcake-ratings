@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BrooksPatton/cupcake-ratings#readme",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "hbs": "^4.0.1"
   }
 }
