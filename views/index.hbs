@@ -8,11 +8,13 @@
 	<body>
 		<div class="cupcake-list">
 			{{#each cupcakes}}
-				<div class="cupcake">
-					<h4>{{this.name}}</h4>
-					<p class="baker">Baker: {{this.baker}}</p>
-					<p class="rating">Rating: {{this.averageRating}}</p>
-				</div>
+				<a href="/cupcakes/{{this.id}}" class="cupcake">
+					<div>
+						<h4>{{this.name}}</h4>
+						<p class="baker">Baker: {{this.baker}}</p>
+						<p class="rating">Rating: {{this.averageRating}}</p>
+					</div>
+				</a>
 			{{/each}}
 		</div>
 	</body>

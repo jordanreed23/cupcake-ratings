@@ -4,6 +4,8 @@
 	margin-right: 1rem;
 	text-align: center;
 	background-color: lightblue;
+	text-decoration: none;
+	color: black;
 }
 
 .cupcake:last-child {
