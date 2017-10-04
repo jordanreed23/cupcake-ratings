@@ -16,6 +16,13 @@
 				{{/each}}
 			</div>
 			<p class="rating">Rating: {{cupcake.averageRating}}</p>
+			<div class="add-rating">
+				<form action="/cupcakes/rating/{{cupcake.id}}" method="post">
+					<label>vote</label>
+					<input type="number" name="vote" value="3" min="0" max="5">
+					<button>Vote!</button>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>

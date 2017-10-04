@@ -10,6 +10,18 @@ function getOneCupcake(id) {
 	}
 }
 
+function addVote(id, vote) {
+	const cupcake = getOneCupcake(id);
+	let sum = 0;
+
+	cupcake.ratings.push(vote);
+	for(let i = 0; i < cupcake.ratings.length; i = i + 1) {
+		sum = sum + cupcake.ratings[i];
+	}
+	cupcake.averageRating = sum / cupcake.ratings.length;
+}
+
 module.exports = {
-	getOneCupcake: getOneCupcake
+	getOneCupcake: getOneCupcake,
+	addVote: addVote
 };
