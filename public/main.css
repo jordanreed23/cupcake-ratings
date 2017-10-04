@@ -1,0 +1,16 @@
+.cupcake {
+	outline: 1px solid black;
+	width: 25rem;
+	margin-right: 1rem;
+	text-align: center;
+	background-color: lightblue;
+}
+
+.cupcake:last-child {
+	margin-right: 0;
+}
+
+.cupcake-list {
+	display: flex;
+	flex-direction: row;
+}
