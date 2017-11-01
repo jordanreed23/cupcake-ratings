@@ -9,9 +9,9 @@ const port = 3000;
 app.set('view engine', 'hbs');
 app.use(express.static('public'));
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
 	res.render('index', {
@@ -36,7 +36,7 @@ app.post('/cupcakes/rating/:id', (req, res) => {
 
 	queries.addVote(id, vote);
 	res.redirect('/');
-})
+});
 
 app.listen(port, () => {
 	console.log('server listening on port', port);
